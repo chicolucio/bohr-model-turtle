@@ -47,6 +47,8 @@ def draw_atom(pen, radius, levels, electrons_per_level, electron_size=15, electr
 if __name__ == '__main__':
     electrons_per_level = []
     levels = eval(input('How many levels? '))
+    if levels<=0:
+        raise Exception("Please enter number above Zero :) ")
     first_level_radius = 45
 
     for i in range(levels):
