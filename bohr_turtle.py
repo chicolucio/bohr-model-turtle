@@ -43,8 +43,12 @@ def draw_atom(pen, radius, levels, electrons_per_level, electron_size=15, electr
             pen.circle(r, arcs)
             circumference = circumference + arcs
 
+            
 
-if __name__ == '__main__':
+totalAtoms = int(input('Enter number of atoms -> '))
+
+for k in range(totalAtoms):
+    
     electrons_per_level = []
     levels = eval(input('How many levels? '))
     first_level_radius = 45
@@ -59,3 +63,7 @@ if __name__ == '__main__':
     pen = turtle_pen()
     draw_atom(pen, first_level_radius, levels, electrons_per_level)
     turtle_teardown(pen)
+    
+   
+
+
